@@ -2,6 +2,7 @@
 import Footer from '@/components/Footer.vue'
 import Header from '@/components/Header.vue'
 import Organizers from '@/components/Organizers.vue'
+import Questions from '@/components/Questions.vue'
 </script>
 
 <template>
@@ -11,6 +12,8 @@ import Organizers from '@/components/Organizers.vue'
     <main class="px-4 pb-20 pt-12 sm:px-6 lg:px-10 lg:pt-16">
 
     </main>
+
+    <Questions />
 
     <Organizers />
 
