@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import AboutContest from '@/components/AboutContest.vue'
 import Footer from '@/components/Footer.vue'
 import Header from '@/components/Header.vue'
 import Nominations from '@/components/Nominations.vue'
@@ -14,6 +15,8 @@ import Questions from '@/components/Questions.vue'
     <main class="px-4 pb-20 pt-12 sm:px-6 lg:px-10 lg:pt-16">
 
     </main>
+
+    <AboutContest />
 
     <Nominations />
 
