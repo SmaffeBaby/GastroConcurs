@@ -26,6 +26,7 @@ const aboutParagraphs = [
         <ApplyButton
           href="#terms"
           label="Подробные условия участия"
+          :opens-modal="false"
           class="mt-10 h-[58px] w-full max-w-[430px] rounded-[22px] px-8 text-[16px] sm:h-[64px] sm:text-[18px]"
         />
       </div>

@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import { onBeforeUnmount, onMounted, ref } from 'vue'
+
 import AboutContest from '@/components/AboutContest.vue'
+import ApplyModal from '@/components/ApplyModal.vue'
 import Footer from '@/components/Footer.vue'
 import Header from '@/components/Header.vue'
 import HeroSection from '@/components/HeroSection.vue'
@@ -8,6 +11,24 @@ import Organizers from '@/components/Organizers.vue'
 import Prizes from '@/components/Prizes.vue'
 import Questions from '@/components/Questions.vue'
 import Stages from '@/components/Stages.vue'
+
+const isApplyModalOpen = ref(false)
+
+function openApplyModal() {
+  isApplyModalOpen.value = true
+}
+
+function closeApplyModal() {
+  isApplyModalOpen.value = false
+}
+
+onMounted(() => {
+  window.addEventListener('open-apply-modal', openApplyModal)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('open-apply-modal', openApplyModal)
+})
 </script>
 
 <template>
@@ -33,5 +54,7 @@ import Stages from '@/components/Stages.vue'
     <Organizers />
 
     <Footer />
+
+    <ApplyModal :is-open="isApplyModalOpen" @close="closeApplyModal" />
   </div>
 </template>
