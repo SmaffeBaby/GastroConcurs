@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+import ApplyButton from '@/components/ApplyButton.vue'
 import { useHeaderNavigation } from '@/composables/useHeaderNavigation'
 import fondSubyektovLogo from '@/img/header/FondSubyektov.svg'
 import komitetPoPromLogo from '@/img/header/KomitetPoProm.svg'
@@ -61,12 +62,9 @@ const isMenuOpen = ref(false)
         </a>
       </nav>
 
-      <a
-        href="#apply"
-        class="ml-auto inline-flex h-14 w-[140px] shrink-0 items-center justify-center rounded-[18px] bg-[#7cff00] text-center text-[13px] font-extrabold leading-none text-[#15003b] shadow-[0_0_26px_rgba(124,255,0,0.22)] transition hover:bg-[#a3ff38] sm:w-[168px] lg:h-16 lg:w-[190px] lg:text-[15px] xl:ml-0 xl:h-[68px] xl:w-full xl:text-[16px] 2xl:h-20 2xl:w-[278px] 2xl:rounded-[22px] 2xl:text-[18px]"
-      >
-        Подать заявку
-      </a>
+      <ApplyButton
+        class="ml-auto h-14 w-[140px] rounded-[18px] text-[13px] sm:w-[168px] lg:h-16 lg:w-[190px] lg:text-[15px] xl:ml-0 xl:h-[68px] xl:w-full xl:text-[16px] 2xl:h-20 2xl:w-[278px] 2xl:rounded-[22px] 2xl:text-[18px]"
+      />
 
       <button
         class="inline-grid size-14 shrink-0 place-items-center rounded-2xl border border-white/15 bg-white/5 text-white xl:hidden"
