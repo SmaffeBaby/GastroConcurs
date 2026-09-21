@@ -2,6 +2,7 @@
 import AboutContest from '@/components/AboutContest.vue'
 import Footer from '@/components/Footer.vue'
 import Header from '@/components/Header.vue'
+import HeroSection from '@/components/HeroSection.vue'
 import Nominations from '@/components/Nominations.vue'
 import Organizers from '@/components/Organizers.vue'
 import Prizes from '@/components/Prizes.vue'
@@ -13,9 +14,11 @@ import Stages from '@/components/Stages.vue'
   <div id="top" class="min-h-screen bg-[#17003f] text-white">
     <Header />
 
-    <main class="px-4 pb-20 pt-12 sm:px-6 lg:px-10 lg:pt-16">
+    <main class="px-4 pb-5 pt-12 sm:px-6 lg:px-10 lg:pt-16">
 
     </main>
+
+    <HeroSection />
 
     <Stages />
 

@@ -12,9 +12,9 @@ const isMenuOpen = ref(false)
 </script>
 
 <template>
-  <header class="relative z-20 px-4 pt-[14px] sm:px-6 lg:px-8">
+  <header class="relative z-20 px-4 pt-[14px] sm:px-6 lg:px-8 xl:pt-0">
     <div
-      class="mx-auto flex max-w-[1836px] items-center gap-3 xl:grid xl:grid-cols-[minmax(150px,176px)_minmax(430px,560px)_minmax(360px,1fr)_minmax(180px,220px)] xl:gap-3 2xl:grid-cols-[233px_675px_626px_278px] 2xl:gap-4"
+      class="relative mx-auto flex max-w-[1836px] items-center gap-3 xl:grid xl:grid-cols-[minmax(150px,176px)_minmax(430px,560px)_minmax(360px,1fr)_minmax(180px,220px)] xl:gap-3 xl:pt-[14px] 2xl:grid-cols-[233px_675px_626px_278px] 2xl:gap-4"
     >
       <a
         href="#top"
@@ -63,7 +63,7 @@ const isMenuOpen = ref(false)
       </nav>
 
       <ApplyButton
-        class="ml-auto h-14 w-[140px] rounded-[18px] text-[13px] sm:w-[168px] lg:h-16 lg:w-[190px] lg:text-[15px] xl:ml-0 xl:h-[68px] xl:w-full xl:text-[16px] 2xl:h-20 2xl:w-[278px] 2xl:rounded-[22px] 2xl:text-[18px]"
+        class="ml-auto h-14 w-[140px] rounded-[18px] px-5 text-[13px] sm:w-[168px] lg:h-16 lg:w-[190px] lg:text-[15px] xl:absolute xl:right-0 xl:top-0 xl:ml-0 xl:h-[94px] xl:w-[220px] xl:rounded-t-none xl:rounded-b-[34px] xl:px-6 xl:text-[16px] 2xl:h-[104px] 2xl:w-[278px] 2xl:rounded-b-[40px] 2xl:text-[18px]"
       />
 
       <button

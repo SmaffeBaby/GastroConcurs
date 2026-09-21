@@ -11,6 +11,7 @@
 :root {
   color: #ffffff;
   background: #17003f;
+  scroll-behavior: smooth;
   font-family:
     "Unbounded", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
@@ -18,6 +19,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+[id] {
+  scroll-margin-top: 110px;
 }
 
 * {

@@ -30,7 +30,7 @@ const stages: StageItem[] = [
 </script>
 
 <template>
-  <section id="stages" class="bg-[#17003f] px-4 py-20 sm:px-6 lg:px-10 lg:py-28">
+  <section id="terms" class="bg-[#17003f] px-4 py-20 sm:px-6 lg:px-10 lg:py-28">
     <div class="mx-auto grid max-w-[1510px] gap-12 lg:grid-cols-[minmax(320px,420px)_minmax(0,1fr)] lg:gap-12 xl:gap-16">
       <h2 class="text-[38px] font-black uppercase leading-none text-white sm:text-[48px] lg:text-[50px] xl:text-[54px]">
         Этапы
