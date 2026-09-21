@@ -6,6 +6,7 @@ import Nominations from '@/components/Nominations.vue'
 import Organizers from '@/components/Organizers.vue'
 import Prizes from '@/components/Prizes.vue'
 import Questions from '@/components/Questions.vue'
+import Stages from '@/components/Stages.vue'
 </script>
 
 <template>
@@ -15,6 +16,8 @@ import Questions from '@/components/Questions.vue'
     <main class="px-4 pb-20 pt-12 sm:px-6 lg:px-10 lg:pt-16">
 
     </main>
+
+    <Stages />
 
     <AboutContest />
 
