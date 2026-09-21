@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Footer from '@/components/Footer.vue'
 import Header from '@/components/Header.vue'
 </script>
 
@@ -9,5 +10,7 @@ import Header from '@/components/Header.vue'
     <main class="px-4 pb-20 pt-12 sm:px-6 lg:px-10 lg:pt-16">
 
     </main>
+
+    <Footer />
   </div>
 </template>
